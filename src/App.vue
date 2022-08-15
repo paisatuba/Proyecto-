@@ -31,7 +31,10 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <style >
 header {
-  line-height: 1.5;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
   
 }
 .Bienve{
