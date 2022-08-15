@@ -5,27 +5,39 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="BSP Logo" class="logo" src="@/components/icons/BSP Blanco PNG.png"  height="160" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <h2 class="Bienve">"Banda Sinfónica De Pensilvania"</h2>
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        
+        <RouterLink to="/inicio">Inicio</RouterLink>
+        <RouterLink to="/horarios">Horarios</RouterLink>
+        <RouterLink to="/eventos">Eventos</RouterLink>
+        
       </nav>
     </div>
   </header>
+  <body>
+    <RouterView />
+  </body>
+  <footer>
+    <img alt="BSP footer" class="footer" src="@/components/icons/Logo BSP horizontal negro.png"  height="160" />
+  </footer>
 
-  <RouterView />
+  
 </template>
 
-<style scoped>
+<style >
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  
 }
+.Bienve{
+  color:hsla(160, 100%, 37%, 1);
 
+}
 .logo {
   display: block;
   margin: 0 auto 2rem;
@@ -33,11 +45,13 @@ header {
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 30px;
   text-align: center;
-  margin-top: 2rem;
+ 
 }
-
+.footer{
+  align-content: center;
+}
 nav a.router-link-exact-active {
   color: var(--color-text);
 }
@@ -60,19 +74,14 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    
   }
 
   .logo {
     margin: 0 2rem 0 0;
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
+  
   nav {
     text-align: left;
     margin-left: -1rem;
