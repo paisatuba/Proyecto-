@@ -50,30 +50,30 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    background-color: black;
+   
     width: 100%;
     height: 80%;
     }
     .one {
     grid-column: 1 ;
     grid-row: 1;
-    border : 1px solid black;
+    
     }
     
     .two {
     grid-column: 2 ;
     grid-row: 1;
-    border : 1px solid black;
+  
     }
     .three {
     grid-column: 3;
     grid-row: 1;
-    border : 1px solid black;
+   
     }
     .four {
     grid-column: 1/4;
     grid-row: 2;
-    border : 1px solid black;
+
     }
     
     

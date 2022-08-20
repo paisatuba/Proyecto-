@@ -1,71 +1,43 @@
 <template>
- <div class="cards">
-        
-        <div class="one">
-            <img alt="BSP Iglesia" class="Banda" src="@/components/icons/corno.png" height=60%  width=100% />
-            <div class="textos">
-                <h3>Ensayo metales</h3>
-                <p>Lunes 2-4</p>
-                <p>Miercoles 2-4</p>
-            </div>
+    <div class="Descripcion">
+        <h2>Proximo evento: concurso en Marquetalia, Caldas</h2>
+        <a class="FuenteDesc">En el marco del encuentro departamental de bandas nos dirgiremos al municipio de Marquetalia en el dia 20 de septiembre.</a>
+        </div>  
+        <div class="espacio">
+
+
         </div>
-        <div class="two">Two</div>
-        <div class="three">Three</div>
-        <div class="four">Four</div>
-        <div class="five">Five</div>
-        <div class="six">Six</div>
-    
-</div>
-   
+    <div class="Banda">
+        <img alt="BSP Iglesia" class="Banda" src="@/components/icons/concurso.png" height="400" width="400" />
+    </div>
+
 </template>
+
 <script>
 export default {
 
 }
 </script>
+
 <style>
-    .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    background-color: gray;
-    width: 100%;
-    height: 80%;
-    }
-    .one {
-    grid-column: 1 ;
-    grid-row: 1;
-    border : 1px solid black;
-    }
+.espacio{
+    width: 5%;
+}
+.FuenteDesc{
+    color: whitesmoke;
     
-    .two {
-    grid-column: 2 ;
-    grid-row: 1;
-    border : 1px solid black;
-    }
-    .three {
-    grid-column: 3;
-    grid-row: 1;
-    border : 1px solid black;
-    }
-    .four {
-    grid-column: 1;
-    grid-row: 2;
-    border : 1px solid black;
-    }
-    .five {
-    grid-column: 2;
-    grid-row: 2;
-    border : 1px solid black;
-    }
-    .six {
-    grid-column: 3;
-    grid-row: 2;
-    border : 1px solid black;
-    }
-    .textos{
-        font-size: 18px;
-        color:yellow;
-    }
+}
+.Descripcion {
+    font-size: 16.5px;
+    width: 60%;
+    float: left;
+    
+}
+
+.Banda {
+    justify-content: center;
+    
+    float: center;
+    
+}
 </style>
